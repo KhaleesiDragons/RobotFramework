@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170926 14:47:38.683" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\StandardLibrary\Tests\Dialogs.robot" id="s1" name="Dialogs">
+<test id="s1-t1" name="Logged out">
+<kw name="Get Selection From User" library="Dialogs">
+<doc>Pauses test execution and asks user to select a value.</doc>
+<arguments>
+<arg>Which browser?</arg>
+<arg>chrome</arg>
+<arg>ie</arg>
+<arg>firefox</arg>
+</arguments>
+<assign>
+<var>${new_browser}</var>
+</assign>
+<msg timestamp="20170926 14:47:41.365" level="INFO">${new_browser} = chrome</msg>
+<status status="PASS" endtime="20170926 14:47:41.365" starttime="20170926 14:47:38.842"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>${new_browser}</arg>
+</arguments>
+<msg timestamp="20170926 14:47:41.365" level="INFO">${BROWSER} = chrome</msg>
+<status status="PASS" endtime="20170926 14:47:41.365" starttime="20170926 14:47:41.365"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170926 14:47:41.365" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com'</msg>
+<status status="PASS" endtime="20170926 14:47:47.802" starttime="20170926 14:47:41.365"></status>
+</kw>
+<kw name="Pause Execution" library="Dialogs">
+<doc>Pauses test execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" endtime="20170926 14:47:49.387" starttime="20170926 14:47:47.803"></status>
+</kw>
+<kw name="Get Value From User" library="Dialogs">
+<doc>Pauses test execution and asks user to input a value.</doc>
+<arguments>
+<arg>Type 'value' and press OK.</arg>
+</arguments>
+<assign>
+<var>${text_from_user}</var>
+</assign>
+<msg timestamp="20170926 14:47:55.729" level="INFO">${text_from_user} = Ferrari</msg>
+<status status="PASS" endtime="20170926 14:47:55.729" starttime="20170926 14:47:49.388"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=twotabsearchtextbox</arg>
+<arg>${text_from_user}</arg>
+</arguments>
+<msg timestamp="20170926 14:47:55.731" level="INFO">Typing text 'Ferrari' into text field 'id=twotabsearchtextbox'</msg>
+<status status="PASS" endtime="20170926 14:47:55.944" starttime="20170926 14:47:55.731"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+</arguments>
+<msg timestamp="20170926 14:47:55.946" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
+<status status="PASS" endtime="20170926 14:47:58.325" starttime="20170926 14:47:55.945"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170926 14:48:01.695" starttime="20170926 14:47:58.333"></status>
+</kw>
+<tags>
+<tag>Web</tag>
+</tags>
+<status status="PASS" endtime="20170926 14:48:01.696" critical="yes" starttime="20170926 14:47:38.841"></status>
+</test>
+<status status="PASS" endtime="20170926 14:48:01.697" starttime="20170926 14:47:38.683"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Web</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Dialogs" pass="1">Dialogs</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
