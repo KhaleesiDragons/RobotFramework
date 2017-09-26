@@ -10,6 +10,6 @@ User can search for products
 
 *** Keywords ***
 Begin web test
-    [Arguments]  ${URL}  ${BROWSER}
-    open browser  ${URL}  ${BROWSER}
+    [Arguments]  ${url}  ${browser}
+    open browser  ${url}  ${browser}
     close browser

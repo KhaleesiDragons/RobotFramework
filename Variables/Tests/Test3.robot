@@ -5,11 +5,11 @@ Library  BuiltIn
 
 *** Test Cases ***
 User can search for products
-    @{URL_AND_BROWSER} =  set variable  https://www.google.com  chrome
-    Begin web test  @{URL_AND_BROWSER}
+    @{url_and_browser} =  set variable  https://www.google.com  chrome
+    Begin web test  @{url_and_browser}
 
 *** Keywords ***
 Begin web test
-    [Arguments]  @{URL_AND_BROWSER}
-    open browser  @{URL_AND_BROWSER}[0]  @{URL_AND_BROWSER}[1]
+    [Arguments]  @{url_and_browser}
+    open browser  @{url_and_browser}[0]  @{url_and_browser}[1]
     close browser
