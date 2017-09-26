@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170926 10:35:59.438" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\Variables\Tests\list.robot" id="s1" name="List">
+<test id="s1-t1" name="Variable demonstration 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_VARIABLES}[0]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.590" level="INFO">Hello there</msg>
+<status status="PASS" endtime="20170926 10:35:59.590" starttime="20170926 10:35:59.589"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_VARIABLES}[1]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.590" level="INFO">This is value 2</msg>
+<status status="PASS" endtime="20170926 10:35:59.590" starttime="20170926 10:35:59.590"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_VARIABLES}[2]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.591" level="INFO">I am item 3</msg>
+<status status="PASS" endtime="20170926 10:35:59.591" starttime="20170926 10:35:59.591"></status>
+</kw>
+<status status="PASS" endtime="20170926 10:35:59.592" critical="yes" starttime="20170926 10:35:59.588"></status>
+</test>
+<test id="s1-t2" name="Variable demonstration 2">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>Item 1</arg>
+<arg>Item 2</arg>
+<arg>Item 3</arg>
+<arg>Item 4</arg>
+</arguments>
+<assign>
+<var>@{MY_LIST_VARIABLE}</var>
+</assign>
+<msg timestamp="20170926 10:35:59.593" level="INFO">@{MY_LIST_VARIABLE} = [ Item 1 | Item 2 | Item 3 | Item 4 ]</msg>
+<status status="PASS" endtime="20170926 10:35:59.593" starttime="20170926 10:35:59.593"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_LIST_VARIABLE}[0]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.594" level="INFO">Item 1</msg>
+<status status="PASS" endtime="20170926 10:35:59.594" starttime="20170926 10:35:59.593"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_LIST_VARIABLE}[1]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.594" level="INFO">Item 2</msg>
+<status status="PASS" endtime="20170926 10:35:59.594" starttime="20170926 10:35:59.594"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_LIST_VARIABLE}[2]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.595" level="INFO">Item 3</msg>
+<status status="PASS" endtime="20170926 10:35:59.595" starttime="20170926 10:35:59.594"></status>
+</kw>
+<status status="PASS" endtime="20170926 10:35:59.595" critical="yes" starttime="20170926 10:35:59.592"></status>
+</test>
+<test id="s1-t3" name="Variable demonstration 3">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>Item 1</arg>
+<arg>Item 2</arg>
+<arg>Item 3</arg>
+</arguments>
+<assign>
+<var>@{MY_LIST_VARIABLES_CREATED}</var>
+</assign>
+<msg timestamp="20170926 10:35:59.603" level="INFO">@{MY_LIST_VARIABLES_CREATED} = [ Item 1 | Item 2 | Item 3 ]</msg>
+<status status="PASS" endtime="20170926 10:35:59.603" starttime="20170926 10:35:59.602"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_LIST_VARIABLES_CREATED}[0]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.603" level="INFO">Item 1</msg>
+<status status="PASS" endtime="20170926 10:35:59.603" starttime="20170926 10:35:59.603"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_LIST_VARIABLES_CREATED}[1]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.604" level="INFO">Item 2</msg>
+<status status="PASS" endtime="20170926 10:35:59.604" starttime="20170926 10:35:59.604"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>@{MY_LIST_VARIABLES_CREATED}[2]</arg>
+</arguments>
+<msg timestamp="20170926 10:35:59.605" level="INFO">Item 3</msg>
+<status status="PASS" endtime="20170926 10:35:59.605" starttime="20170926 10:35:59.605"></status>
+</kw>
+<status status="PASS" endtime="20170926 10:35:59.605" critical="yes" starttime="20170926 10:35:59.599"></status>
+</test>
+<status status="PASS" endtime="20170926 10:35:59.607" starttime="20170926 10:35:59.443"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="List" pass="3">List</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
