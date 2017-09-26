@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170926 10:54:36.376" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\Variables\Tests\Test1.robot" id="s1" name="Test1">
-<test id="s1-t1" name="User can search for products">
+<robot generated="20170926 11:38:27.826" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\Variables\Tests\Value_global.robot" id="s1" name="Value global">
+<test id="s1-t1" name="Test global value">
 <kw name="Begin web test">
-<arguments>
-<arg>https://www.amazon.com</arg>
-<arg>chrome</arg>
-</arguments>
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
-<arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170926 10:54:36.494" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com'</msg>
-<status status="PASS" endtime="20170926 10:54:42.658" starttime="20170926 10:54:36.494"></status>
+<msg timestamp="20170926 11:38:27.950" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20170926 11:38:32.658" starttime="20170926 11:38:27.950"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170926 10:54:45.975" starttime="20170926 10:54:42.659"></status>
+<status status="PASS" endtime="20170926 11:38:35.971" starttime="20170926 11:38:32.658"></status>
 </kw>
-<status status="PASS" endtime="20170926 10:54:45.976" starttime="20170926 10:54:36.494"></status>
+<status status="PASS" endtime="20170926 11:38:35.971" starttime="20170926 11:38:27.950"></status>
 </kw>
-<status status="PASS" endtime="20170926 10:54:45.977" critical="yes" starttime="20170926 10:54:36.494"></status>
+<kw name="Second web test">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${MY_VARIABLES}</arg>
+</arguments>
+<msg timestamp="20170926 11:38:35.971" level="INFO">Value from Scope</msg>
+<status status="PASS" endtime="20170926 11:38:35.971" starttime="20170926 11:38:35.971"></status>
+</kw>
+<status status="PASS" endtime="20170926 11:38:35.971" starttime="20170926 11:38:35.971"></status>
+</kw>
+<status status="PASS" endtime="20170926 11:38:35.971" critical="yes" starttime="20170926 11:38:27.950"></status>
 </test>
-<status status="PASS" endtime="20170926 10:54:45.980" starttime="20170926 10:54:36.381"></status>
+<status status="PASS" endtime="20170926 11:38:35.971" starttime="20170926 11:38:27.834"></status>
 </suite>
 <statistics>
 <total>
@@ -34,10 +41,9 @@
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Test1" pass="1">Test1</stat>
+<stat fail="0" id="s1" name="Value global" pass="1">Value global</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20170926 10:54:36.400" level="ERROR">Error in file 'C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\Variables\Tests\Test1.robot': Resource file '..\Resources\scope.robot' does not exist.</msg>
 </errors>
 </robot>
