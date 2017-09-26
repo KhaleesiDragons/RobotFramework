@@ -1,92 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170926 14:47:38.683" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\StandardLibrary\Tests\Dialogs.robot" id="s1" name="Dialogs">
-<test id="s1-t1" name="Logged out">
-<kw name="Get Selection From User" library="Dialogs">
-<doc>Pauses test execution and asks user to select a value.</doc>
+<robot generated="20170926 15:34:35.855" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\StandardLibrary\Tests\Files_folders.robot" id="s1" name="Files folders">
+<test id="s1-t1" name="New derictories">
+<kw name="Create the Base directory" library="OS">
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
 <arguments>
-<arg>Which browser?</arg>
-<arg>chrome</arg>
-<arg>ie</arg>
-<arg>firefox</arg>
+<arg>${output_directory}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.001" html="yes" level="INFO">Directory '&lt;a href="file://C:\Test_directory"&gt;C:\Test_directory&lt;/a&gt;' already exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<arguments>
+<arg>${output_directory}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.001" html="yes" level="INFO">Path '&lt;a href="file://C:\Test_directory"&gt;C:\Test_directory&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
+</kw>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
+</kw>
+<kw name="Create Directory 1" library="OS">
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${output_directory}</arg>
+<arg>${derictory_1}</arg>
 </arguments>
 <assign>
-<var>${new_browser}</var>
+<var>${directory_path}</var>
 </assign>
-<msg timestamp="20170926 14:47:41.365" level="INFO">${new_browser} = chrome</msg>
-<status status="PASS" endtime="20170926 14:47:41.365" starttime="20170926 14:47:38.842"></status>
+<msg timestamp="20170926 15:34:36.001" level="INFO">${directory_path} = C:\Test_directory\folder1</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
 </kw>
-<kw name="Set Global Variable" library="BuiltIn">
-<doc>Makes a variable available globally in all tests and suites.</doc>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
 <arguments>
-<arg>${BROWSER}</arg>
-<arg>${new_browser}</arg>
+<arg>${directory_path}</arg>
 </arguments>
-<msg timestamp="20170926 14:47:41.365" level="INFO">${BROWSER} = chrome</msg>
-<status status="PASS" endtime="20170926 14:47:41.365" starttime="20170926 14:47:41.365"></status>
+<msg timestamp="20170926 15:34:36.001" html="yes" level="INFO">Directory '&lt;a href="file://C:\Test_directory\folder1"&gt;C:\Test_directory\folder1&lt;/a&gt;' already exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
 </kw>
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to given URL.</doc>
+<kw name="Should Exist" library="OperatingSystem">
+<doc>Fails unless the given path (file or directory) exists.</doc>
 <arguments>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
+<arg>${directory_path}</arg>
 </arguments>
-<msg timestamp="20170926 14:47:41.365" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com'</msg>
-<status status="PASS" endtime="20170926 14:47:47.802" starttime="20170926 14:47:41.365"></status>
+<msg timestamp="20170926 15:34:36.001" html="yes" level="INFO">Path '&lt;a href="file://C:\Test_directory\folder1"&gt;C:\Test_directory\folder1&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
 </kw>
-<kw name="Pause Execution" library="Dialogs">
-<doc>Pauses test execution until user clicks ``Ok`` button.</doc>
-<status status="PASS" endtime="20170926 14:47:49.387" starttime="20170926 14:47:47.803"></status>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
 </kw>
-<kw name="Get Value From User" library="Dialogs">
-<doc>Pauses test execution and asks user to input a value.</doc>
+<kw name="Create Directory 2" library="OS">
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
 <arguments>
-<arg>Type 'value' and press OK.</arg>
+<arg>${output_directory}</arg>
+<arg>${derictory_2}</arg>
 </arguments>
 <assign>
-<var>${text_from_user}</var>
+<var>${directory_path}</var>
 </assign>
-<msg timestamp="20170926 14:47:55.729" level="INFO">${text_from_user} = Ferrari</msg>
-<status status="PASS" endtime="20170926 14:47:55.729" starttime="20170926 14:47:49.388"></status>
+<msg timestamp="20170926 15:34:36.001" level="INFO">${directory_path} = C:\Test_directory\folder2</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
+<kw name="Create Directory" library="OperatingSystem">
+<doc>Creates the specified directory.</doc>
 <arguments>
-<arg>id=twotabsearchtextbox</arg>
-<arg>${text_from_user}</arg>
+<arg>${directory_path}</arg>
 </arguments>
-<msg timestamp="20170926 14:47:55.731" level="INFO">Typing text 'Ferrari' into text field 'id=twotabsearchtextbox'</msg>
-<status status="PASS" endtime="20170926 14:47:55.944" starttime="20170926 14:47:55.731"></status>
+<msg timestamp="20170926 15:34:36.001" html="yes" level="INFO">Directory '&lt;a href="file://C:\Test_directory\folder2"&gt;C:\Test_directory\folder2&lt;/a&gt;' already exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
 </kw>
-<kw name="Click Button" library="Selenium2Library">
-<doc>Clicks a button identified by `locator`.</doc>
+<kw name="Should Exist" library="OperatingSystem">
+<doc>Fails unless the given path (file or directory) exists.</doc>
 <arguments>
-<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+<arg>${directory_path}</arg>
 </arguments>
-<msg timestamp="20170926 14:47:55.946" level="INFO">Clicking button 'xpath=//*[@id="nav-search"]/form/div[2]/div/input'.</msg>
-<status status="PASS" endtime="20170926 14:47:58.325" starttime="20170926 14:47:55.945"></status>
+<msg timestamp="20170926 15:34:36.001" html="yes" level="INFO">Path '&lt;a href="file://C:\Test_directory\folder2"&gt;C:\Test_directory\folder2&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
 </kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170926 14:48:01.695" starttime="20170926 14:47:58.333"></status>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
 </kw>
-<tags>
-<tag>Web</tag>
-</tags>
-<status status="PASS" endtime="20170926 14:48:01.696" critical="yes" starttime="20170926 14:47:38.841"></status>
+<status status="PASS" endtime="20170926 15:34:36.001" critical="yes" starttime="20170926 15:34:36.001"></status>
 </test>
-<status status="PASS" endtime="20170926 14:48:01.697" starttime="20170926 14:47:38.683"></status>
+<test id="s1-t2" name="Create some files">
+<kw name="Create file 1" library="OS">
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${output_directory}</arg>
+<arg>${derictory_1}</arg>
+<arg>${file1}</arg>
+</arguments>
+<assign>
+<var>${file_path}</var>
+</assign>
+<msg timestamp="20170926 15:34:36.001" level="INFO">${file_path} = C:\Test_directory\folder1\First file.txt</msg>
+<status status="PASS" endtime="20170926 15:34:36.001" starttime="20170926 15:34:36.001"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${file_path}</arg>
+<arg>Justin Bibber is the best singer :)</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.017" html="yes" level="INFO">Created file '&lt;a href="file://C:\Test_directory\folder1\First file.txt"&gt;C:\Test_directory\folder1\First file.txt&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.017"></status>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<arguments>
+<arg>${file_path}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.017" html="yes" level="INFO">Path '&lt;a href="file://C:\Test_directory\folder1\First file.txt"&gt;C:\Test_directory\folder1\First file.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.017"></status>
+</kw>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.001"></status>
+</kw>
+<kw name="Create file 2" library="OS">
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${output_directory}</arg>
+<arg>${derictory_2}</arg>
+<arg>${file2}</arg>
+</arguments>
+<assign>
+<var>${file_path}</var>
+</assign>
+<msg timestamp="20170926 15:34:36.017" level="INFO">${file_path} = C:\Test_directory\folder2\Second file.txt</msg>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.017"></status>
+</kw>
+<kw name="Create File" library="OperatingSystem">
+<doc>Creates a file with the given content and encoding.</doc>
+<arguments>
+<arg>${file_path}</arg>
+<arg>I hate Justin Bibber :)</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.017" html="yes" level="INFO">Created file '&lt;a href="file://C:\Test_directory\folder2\Second file.txt"&gt;C:\Test_directory\folder2\Second file.txt&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.017"></status>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<arguments>
+<arg>${file_path}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.017" html="yes" level="INFO">Path '&lt;a href="file://C:\Test_directory\folder2\Second file.txt"&gt;C:\Test_directory\folder2\Second file.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.017"></status>
+</kw>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.017"></status>
+</kw>
+<status status="PASS" endtime="20170926 15:34:36.017" critical="yes" starttime="20170926 15:34:36.001"></status>
+</test>
+<test id="s1-t3" name="Move files to Base directory">
+<kw name="Move to base directory" library="OS">
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${output_directory}</arg>
+<arg>${derictory_1}</arg>
+<arg>${file1}</arg>
+</arguments>
+<assign>
+<var>${source_path}</var>
+</assign>
+<msg timestamp="20170926 15:34:36.017" level="INFO">${source_path} = C:\Test_directory\folder1\First file.txt</msg>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.017"></status>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${output_directory}</arg>
+<arg>${file1}</arg>
+</arguments>
+<assign>
+<var>${target_path}</var>
+</assign>
+<msg timestamp="20170926 15:34:36.017" level="INFO">${target_path} = C:\Test_directory\First file.txt</msg>
+<status status="PASS" endtime="20170926 15:34:36.017" starttime="20170926 15:34:36.017"></status>
+</kw>
+<kw name="Move File" library="OperatingSystem">
+<doc>Moves the source file into the destination.</doc>
+<arguments>
+<arg>${source_path}</arg>
+<arg>${target_path}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.036" html="yes" level="INFO">Moved file from '&lt;a href="file://C:\Test_directory\folder1\First file.txt"&gt;C:\Test_directory\folder1\First file.txt&lt;/a&gt;' to '&lt;a href="file://C:\Test_directory\First file.txt"&gt;C:\Test_directory\First file.txt&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20170926 15:34:36.036" starttime="20170926 15:34:36.017"></status>
+</kw>
+<kw name="Should Exist" library="OperatingSystem">
+<doc>Fails unless the given path (file or directory) exists.</doc>
+<arguments>
+<arg>${target_path}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.037" html="yes" level="INFO">Path '&lt;a href="file://C:\Test_directory\First file.txt"&gt;C:\Test_directory\First file.txt&lt;/a&gt;' exists.</msg>
+<status status="PASS" endtime="20170926 15:34:36.037" starttime="20170926 15:34:36.036"></status>
+</kw>
+<kw name="Should Not Exist" library="OperatingSystem">
+<doc>Fails if the given path (file or directory) exists.</doc>
+<arguments>
+<arg>${source_path}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.037" html="yes" level="INFO">Path '&lt;a href="file://C:\Test_directory\folder1\First file.txt"&gt;C:\Test_directory\folder1\First file.txt&lt;/a&gt;' does not exist.</msg>
+<status status="PASS" endtime="20170926 15:34:36.037" starttime="20170926 15:34:36.037"></status>
+</kw>
+<status status="PASS" endtime="20170926 15:34:36.037" starttime="20170926 15:34:36.017"></status>
+</kw>
+<kw name="Remove old derictory" library="OS">
+<kw name="Join Path" library="OperatingSystem">
+<doc>Joins the given path part(s) to the given base path.</doc>
+<arguments>
+<arg>${output_directory}</arg>
+<arg>${derictory_1}</arg>
+</arguments>
+<assign>
+<var>${empty_folder}</var>
+</assign>
+<msg timestamp="20170926 15:34:36.039" level="INFO">${empty_folder} = C:\Test_directory\folder1</msg>
+<status status="PASS" endtime="20170926 15:34:36.039" starttime="20170926 15:34:36.038"></status>
+</kw>
+<kw name="Remove Directory" library="OperatingSystem">
+<doc>Removes the directory pointed to by the given ``path``.</doc>
+<arguments>
+<arg>${empty_folder}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.040" html="yes" level="INFO">Listing contents of directory '&lt;a href="file://C:\Test_directory\folder1"&gt;C:\Test_directory\folder1&lt;/a&gt;'.</msg>
+<msg timestamp="20170926 15:34:36.041" html="yes" level="INFO">Directory '&lt;a href="file://C:\Test_directory\folder1"&gt;C:\Test_directory\folder1&lt;/a&gt;' is empty.</msg>
+<msg timestamp="20170926 15:34:36.043" html="yes" level="INFO">Removed directory '&lt;a href="file://C:\Test_directory\folder1"&gt;C:\Test_directory\folder1&lt;/a&gt;'.</msg>
+<status status="PASS" endtime="20170926 15:34:36.043" starttime="20170926 15:34:36.039"></status>
+</kw>
+<kw name="Should Not Exist" library="OperatingSystem">
+<doc>Fails if the given path (file or directory) exists.</doc>
+<arguments>
+<arg>${empty_folder}</arg>
+</arguments>
+<msg timestamp="20170926 15:34:36.045" html="yes" level="INFO">Path '&lt;a href="file://C:\Test_directory\folder1"&gt;C:\Test_directory\folder1&lt;/a&gt;' does not exist.</msg>
+<status status="PASS" endtime="20170926 15:34:36.045" starttime="20170926 15:34:36.044"></status>
+</kw>
+<status status="PASS" endtime="20170926 15:34:36.046" starttime="20170926 15:34:36.038"></status>
+</kw>
+<status status="PASS" endtime="20170926 15:34:36.046" critical="yes" starttime="20170926 15:34:36.017"></status>
+</test>
+<status status="PASS" endtime="20170926 15:34:36.048" starttime="20170926 15:34:35.855"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">Web</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Dialogs" pass="1">Dialogs</stat>
+<stat fail="0" id="s1" name="Files folders" pass="3">Files folders</stat>
 </suite>
 </statistics>
 <errors>
