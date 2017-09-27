@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170927 16:13:26.129" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\Locators\Tests\MouseLocator.robot" id="s1" name="MouseLocator">
+<test id="s1-t1" name="Should be able to do something">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170927 16:13:26.259" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com'</msg>
+<status status="PASS" endtime="20170927 16:13:33.039" starttime="20170927 16:13:26.259"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Low-price fashion with free shipping</arg>
+</arguments>
+<status status="PASS" endtime="20170927 16:13:33.132" starttime="20170927 16:13:33.041"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>id=nav-tools</arg>
+</arguments>
+<msg timestamp="20170927 16:13:33.133" level="INFO">Simulating Mouse Over on element 'id=nav-tools'</msg>
+<status status="PASS" endtime="20170927 16:13:33.250" starttime="20170927 16:13:33.133"></status>
+</kw>
+<kw name="Mouse Out" library="Selenium2Library">
+<doc>Simulates moving mouse away from the element specified by `locator`.</doc>
+<arguments>
+<arg>id=nav-tools</arg>
+</arguments>
+<msg timestamp="20170927 16:13:33.252" level="INFO">Simulating Mouse Out on element 'id=nav-tools'</msg>
+<status status="PASS" endtime="20170927 16:13:35.318" starttime="20170927 16:13:33.251"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="gw-desktop-herotator"]/div/div/div/div[3]/a/i</arg>
+</arguments>
+<msg timestamp="20170927 16:13:35.320" level="INFO">Clicking element 'xpath=//*[@id="gw-desktop-herotator"]/div/div/div/div[3]/a/i'.</msg>
+<status status="PASS" endtime="20170927 16:13:35.458" starttime="20170927 16:13:35.320"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170927 16:13:38.728" starttime="20170927 16:13:35.466"></status>
+</kw>
+<status status="PASS" endtime="20170927 16:13:38.729" critical="yes" starttime="20170927 16:13:26.259"></status>
+</test>
+<status status="PASS" endtime="20170927 16:13:38.732" starttime="20170927 16:13:26.129"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="MouseLocator" pass="1">MouseLocator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
