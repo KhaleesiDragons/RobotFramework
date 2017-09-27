@@ -11,4 +11,5 @@ Make a simple REST API call
 
 Display emoji from GitHub
     [Tags]  API
-    Display Emoji
+    ${ReturnedInfo}  Display Emoji
+    Log  ${Returnedinfo}
