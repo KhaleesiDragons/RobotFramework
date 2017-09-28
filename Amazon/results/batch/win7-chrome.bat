@@ -1,4 +1,4 @@
 @echo off
-cd C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\robot-scripts\Project1\Amazon
-call pybot -d results/batch/scheduler -v BROWSER:chrome tests/Amazon.robot
+cd C:\Users\abgul\OneDrive\Development\RobotFramework\Amazon
+call pybot -d results/batch -v BROWSER:chrome tests/Amazon.robot
 
