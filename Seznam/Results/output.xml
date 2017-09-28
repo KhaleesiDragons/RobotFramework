@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170928 23:27:08.149" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="C:\Users\abgul\OneDrive\Development\RobotFramework\Seznam\Tests\Seznam.robot" id="s1" name="Seznam">
+<test id="s1-t1" name="First step">
+<kw type="setup" name="start web test" library="LoadingPage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170928 23:27:08.505" level="INFO">Opening browser 'chrome' to base url 'https://www.sreality.cz/hledani/byty'</msg>
+<status status="PASS" endtime="20170928 23:27:17.806" starttime="20170928 23:27:08.505"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170928 23:27:18.973" starttime="20170928 23:27:17.807"></status>
+</kw>
+<status status="PASS" endtime="20170928 23:27:18.974" starttime="20170928 23:27:08.504"></status>
+</kw>
+<kw name="Select Apartman from list" library="SelectApartman">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>1+1</arg>
+</arguments>
+<status status="PASS" endtime="20170928 23:27:19.145" starttime="20170928 23:27:18.981"></status>
+</kw>
+<kw name="Select Checkbox" library="Selenium2Library">
+<doc>Selects checkbox identified by `locator`.</doc>
+<arguments>
+<arg>1+1</arg>
+</arguments>
+<msg timestamp="20170928 23:27:19.147" level="INFO">Selecting checkbox '1+1'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170928 23:27:19.803" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170928 23:27:19.803" starttime="20170928 23:27:19.254"></status>
+</kw>
+<msg timestamp="20170928 23:27:19.806" level="FAIL">ValueError: Element locator '1+1' did not match any elements.</msg>
+<status status="FAIL" endtime="20170928 23:27:19.807" starttime="20170928 23:27:19.146"></status>
+</kw>
+<status status="FAIL" endtime="20170928 23:27:19.807" starttime="20170928 23:27:18.980"></status>
+</kw>
+<kw type="teardown" name="end web test" library="LoadingPage">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170928 23:27:23.200" starttime="20170928 23:27:19.811"></status>
+</kw>
+<status status="PASS" endtime="20170928 23:27:23.201" starttime="20170928 23:27:19.810"></status>
+</kw>
+<status status="FAIL" endtime="20170928 23:27:23.202" critical="yes" starttime="20170928 23:27:08.502">ValueError: Element locator '1+1' did not match any elements.</status>
+</test>
+<doc>Testing web site www.seznam.cz</doc>
+<status status="FAIL" endtime="20170928 23:27:23.211" starttime="20170928 23:27:08.163"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Seznam" pass="0">Seznam</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,3 @@
+[0928/231021.402:ERROR:process_reader_win.cc(123)] NtOpenThread: {Pøístup byl odepøen} Proces požadoval pøístup k objektu, ale nebyla mu udìlena odpovídající pøístupová práva.  (0xc0000022)
+[0928/231021.404:ERROR:exception_snapshot_win.cc(87)] thread ID 9600 not found in process
+[0928/231021.404:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
