@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../JavaScript/.idea/JavaScript.iml" filepath="$PROJECT_DIR$/../../JavaScript/.idea/JavaScript.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Locators.iml" filepath="$PROJECT_DIR$/.idea/Locators.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../Python/.idea/Python.iml" filepath="$PROJECT_DIR$/../../Python/.idea/Python.iml" />
       <module fileurl="file://$PROJECT_DIR$/../.idea/RobotFramework.iml" filepath="$PROJECT_DIR$/../.idea/RobotFramework.iml" />
     </modules>
   </component>

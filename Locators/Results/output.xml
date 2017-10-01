@@ -1,64 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170927 16:13:26.129" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
-<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\Locators\Tests\MouseLocator.robot" id="s1" name="MouseLocator">
-<test id="s1-t1" name="Should be able to do something">
-<kw name="Open Browser" library="Selenium2Library">
-<doc>Opens a new browser instance to given URL.</doc>
+<robot generated="20171001 21:45:48.614" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\GulnaraAbilovatesena\OneDrive - tesena s.r.o\development\RobotFramework\Locators\Tests\ElseIf.robot" id="s1" name="ElseIf">
+<test id="s1-t1" name="Testing a true IF statement">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
-<arg>${URL}</arg>
-<arg>${BROWSER}</arg>
+<arg>${MY_VALUE} &gt; 50</arg>
+<arg>Keyword 1</arg>
 </arguments>
-<msg timestamp="20170927 16:13:26.259" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com'</msg>
-<status status="PASS" endtime="20170927 16:13:33.039" starttime="20170927 16:13:26.259"></status>
-</kw>
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
+<kw name="Keyword 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>Low-price fashion with free shipping</arg>
+<arg>In keyword 1</arg>
 </arguments>
-<status status="PASS" endtime="20170927 16:13:33.132" starttime="20170927 16:13:33.041"></status>
+<msg timestamp="20171001 21:45:48.733" level="INFO">In keyword 1</msg>
+<status status="PASS" endtime="20171001 21:45:48.733" starttime="20171001 21:45:48.733"></status>
 </kw>
-<kw name="Mouse Over" library="Selenium2Library">
-<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
-<arguments>
-<arg>id=nav-tools</arg>
-</arguments>
-<msg timestamp="20170927 16:13:33.133" level="INFO">Simulating Mouse Over on element 'id=nav-tools'</msg>
-<status status="PASS" endtime="20170927 16:13:33.250" starttime="20170927 16:13:33.133"></status>
+<status status="PASS" endtime="20171001 21:45:48.733" starttime="20171001 21:45:48.733"></status>
 </kw>
-<kw name="Mouse Out" library="Selenium2Library">
-<doc>Simulates moving mouse away from the element specified by `locator`.</doc>
-<arguments>
-<arg>id=nav-tools</arg>
-</arguments>
-<msg timestamp="20170927 16:13:33.252" level="INFO">Simulating Mouse Out on element 'id=nav-tools'</msg>
-<status status="PASS" endtime="20170927 16:13:35.318" starttime="20170927 16:13:33.251"></status>
+<status status="PASS" endtime="20171001 21:45:48.733" starttime="20171001 21:45:48.732"></status>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>xpath=//*[@id="gw-desktop-herotator"]/div/div/div/div[3]/a/i</arg>
-</arguments>
-<msg timestamp="20170927 16:13:35.320" level="INFO">Clicking element 'xpath=//*[@id="gw-desktop-herotator"]/div/div/div/div[3]/a/i'.</msg>
-<status status="PASS" endtime="20170927 16:13:35.458" starttime="20170927 16:13:35.320"></status>
-</kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170927 16:13:38.728" starttime="20170927 16:13:35.466"></status>
-</kw>
-<status status="PASS" endtime="20170927 16:13:38.729" critical="yes" starttime="20170927 16:13:26.259"></status>
+<status status="PASS" endtime="20171001 21:45:48.734" critical="yes" starttime="20171001 21:45:48.731"></status>
 </test>
-<status status="PASS" endtime="20170927 16:13:38.732" starttime="20170927 16:13:26.129"></status>
+<test id="s1-t2" name="Testing a false IF statement">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${MY_VALUE} &gt; 200</arg>
+<arg>Keyword 1</arg>
+</arguments>
+<status status="PASS" endtime="20171001 21:45:48.735" starttime="20171001 21:45:48.735"></status>
+</kw>
+<status status="PASS" endtime="20171001 21:45:48.735" critical="yes" starttime="20171001 21:45:48.734"></status>
+</test>
+<test id="s1-t3" name="Testing an IF/ELSE statement">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${MY_VALUE} &gt; 200</arg>
+<arg>Keyword 1</arg>
+<arg>ELSE</arg>
+<arg>Keyword 2</arg>
+</arguments>
+<kw name="Keyword 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>In keyword 2</arg>
+</arguments>
+<msg timestamp="20171001 21:45:48.738" level="INFO">In keyword 2</msg>
+<status status="PASS" endtime="20171001 21:45:48.738" starttime="20171001 21:45:48.738"></status>
+</kw>
+<status status="PASS" endtime="20171001 21:45:48.738" starttime="20171001 21:45:48.737"></status>
+</kw>
+<status status="PASS" endtime="20171001 21:45:48.738" starttime="20171001 21:45:48.737"></status>
+</kw>
+<status status="PASS" endtime="20171001 21:45:48.738" critical="yes" starttime="20171001 21:45:48.736"></status>
+</test>
+<test id="s1-t4" name="Testing an IF/ElSE IF/ELSE statement">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${MY_VALUE} &gt; 200</arg>
+<arg>Keyword 1</arg>
+<arg>ELSE IF</arg>
+<arg>${MY_VALUE} == 10</arg>
+<arg>Keyword 2</arg>
+<arg>ELSE</arg>
+<arg>Keyword 3</arg>
+</arguments>
+<kw name="Keyword 3">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>In keyword 3</arg>
+</arguments>
+<msg timestamp="20171001 21:45:48.743" level="INFO">In keyword 3</msg>
+<status status="PASS" endtime="20171001 21:45:48.743" starttime="20171001 21:45:48.742"></status>
+</kw>
+<status status="PASS" endtime="20171001 21:45:48.744" starttime="20171001 21:45:48.742"></status>
+</kw>
+<status status="PASS" endtime="20171001 21:45:48.744" starttime="20171001 21:45:48.741"></status>
+</kw>
+<status status="PASS" endtime="20171001 21:45:48.744" critical="yes" starttime="20171001 21:45:48.740"></status>
+</test>
+<status status="PASS" endtime="20171001 21:45:48.746" starttime="20171001 21:45:48.619"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="MouseLocator" pass="1">MouseLocator</stat>
+<stat fail="0" id="s1" name="ElseIf" pass="4">ElseIf</stat>
 </suite>
 </statistics>
 <errors>
