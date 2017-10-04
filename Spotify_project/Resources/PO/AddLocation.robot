@@ -4,9 +4,7 @@ Resource  ../Resources/Variables.robot
 *** Variables ***
 
 *** Keywords ***
-Find location path
-    wait until page contains element  xpath=//a[text()[contains(.,"Locations")]]
-    click element  xpath=//a[text()[contains(.,"Locations")]]
+Click to button "Add Location"
     wait until page contains element  xpath=//a[@id="locations__create-button"]
     click element  xpath=//a[@id="locations__create-button"]
 

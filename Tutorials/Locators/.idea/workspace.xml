@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6eeff65-0b5e-460c-b2df-786f91ce33f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../Spotify_project/Resources/PO/Menu.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spotify_project/Resources/Location.robot" afterPath="$PROJECT_DIR$/../../Spotify_project/Resources/Location.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spotify_project/Resources/PO/AddLocation.robot" afterPath="$PROJECT_DIR$/../../Spotify_project/Resources/PO/AddLocation.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Spotify_project/Tests/Test.robot" afterPath="$PROJECT_DIR$/../../Spotify_project/Tests/Test.robot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +14,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ActivateSubscription.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/ActivateSubscription.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subscription.robot" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/PO/Subscription.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.robot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Tests/Test.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#395#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +96,7 @@
         <option value="$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/Location.robot" />
         <option value="$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/PO/RemoveLocation.robot" />
         <option value="$PROJECT_DIR$/../../../../Spotify/Spotify_project/Tests/Test.robot" />
+        <option value="$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/PO/Subscription.robot" />
       </list>
     </option>
   </component>
@@ -96,23 +130,18 @@
           <expand>
             <path>
               <item name="Locators" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotFramework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Locators" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotFramework" type="462c0819:PsiDirectoryNode" />
               <item name="Spotify_project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Locators" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RobotFramework" type="462c0819:PsiDirectoryNode" />
               <item name="Spotify_project" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Locators" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spotify_project" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="PO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Locators" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spotify_project" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,16 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/PO/Subscription.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/PO/Start_end.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -294,7 +313,7 @@
         <state relative-caret-position="125">
           <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -318,30 +337,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/ActivateSubscription.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/PO/AddLocation.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/LogInForm.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -370,17 +371,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Tests/Test.robot">
+    <entry file="file://$PROJECT_DIR$/../../Spotify_project/Resources/LogInForm.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#395#0" expanded="true" />
+            <element signature="e#0#94#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Spotify_project/Resources/LogInForm.robot">
+    <entry file="file://$PROJECT_DIR$/../../Spotify_project/Resources/Location.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#97#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/LogInForm.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -398,12 +409,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Spotify_project/Resources/Location.robot">
+    <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Tests/Test.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="350">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="e#0#97#0" expanded="true" />
+            <element signature="e#0#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/ActivateSubscription.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Spotify/Spotify_project/Resources/PO/Subscription.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#81#0" expanded="true" />
           </folding>
         </state>
       </provider>

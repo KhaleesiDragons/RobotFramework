@@ -1,9 +1,10 @@
 *** Settings ***
 Resource  ../Resources/PO/AddLocation.robot
+Resource  ../Resources/PO/Menu.robot
 *** Keywords ***
 Find location page
-    AddLocation.Find location path
-
+    Menu.Click to Locations in menu
+    AddLocation.Click to button "Add Location"
 
 Fill all items in location form
     AddLocation.Verify location page
